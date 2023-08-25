@@ -9,7 +9,7 @@ tasks:
   - init: |
       (
         set -e # Immediately exit on failure off a command
-        apt-get update && apt-get install -y g++ python cmake flex bison
+        sudo apt-get update && sudo apt-get install -y g++ python cmake flex bison
         mkdir build
         cd build
         cmake -G "Unix Makefiles" ..
